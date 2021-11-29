@@ -89,12 +89,11 @@ section{
 }
 
 h4{
-    margin-bottom: 12px;
-
+    margin-bottom: 3px;
 }
 
 h3{
-    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 
@@ -162,9 +161,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;
-    overflow-x: visible;
-    
+    flex-wrap: wrap;   
 }
 
 .testi{
@@ -198,3 +195,9 @@ footer{
     font-style: italic;
     
 }
+
+
+.wid {
+    column-width: 500px;
+  }
+  
