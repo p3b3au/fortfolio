@@ -7,11 +7,19 @@
 }
 @media (max-width: 1000px){
     #back{
-        height: 500px;
+        height: 200px;
     }
 }
     
-
+#back{
+    background: url(./img/robert-mitchum.jpg), linear-gradient(0.25turn, #37916e, black 50%);
+    background-size: contain;
+    background-position:right;
+    background-repeat: no-repeat;
+    height: 750px; 
+    color: white;
+    
+}
     
 
 
@@ -26,6 +34,8 @@ header{
     color: white;
     height: 40px;
     align-items: center;
+    width: 1300px;
+    position: fixed;
 }
 
 h1{
@@ -45,14 +55,78 @@ nav>ul>li{
     margin-right: 12px;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    
+}
 
-main>div{
-    background: url(./img/robert-mitchum.jpg), linear-gradient(0.25turn, #37916e, black 50%);
-    background-size: contain;
-    background-position:right;
-    background-repeat: no-repeat;
-    height: 750px;   
-    display: flex;  
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 45px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-style: solid;
+}
+
+h4{
+    margin-bottom: 12px;
+
+}
+
+h3{
+    margin-top: 3px;
+}
+
+
+section>div{
+    margin-right: 12px;
+}
+
+
+#learn{
+    display: flex;
     flex-direction: row;
-    justify-content: start;       
+}
+
+#left{
+    margin: 12px;
+}
+
+#right{
+    display: flex;
+    margin-left: 0px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#skills>div{
+    display: block;
+    margin-bottom: 12px;
+}
+
+.progressbar{
+  width: 400px;
+  padding:0px;
+  border:1px solid black;
+  border-radius: 12px;
+  height:12px;
+}
+
+.progressbar::-webkit-progress-bar {
+    border-radius: 12px;
+    background: rgb(92, 47, 5);
+}
+progress::-webkit-progress-value {
+	background:#37916e;
 }
