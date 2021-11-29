@@ -1,0 +1,58 @@
+@media (min-width: 1300px){
+    body{
+        width: 1300px;
+        margin: auto;
+        margin-top: 0px;
+}
+}
+@media (max-width: 1000px){
+    #back{
+        height: 500px;
+    }
+}
+    
+
+    
+
+
+html {
+    background-color: #1D2126;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    background-color: #37916e ;
+    color: white;
+    height: 40px;
+    align-items: center;
+}
+
+h1{
+    margin-right: 25px;
+}
+
+nav>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+
+nav>ul>li{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+
+main>div{
+    background: url(./img/robert-mitchum.jpg), linear-gradient(0.25turn, #37916e, black 50%);
+    background-size: contain;
+    background-position:right;
+    background-repeat: no-repeat;
+    height: 750px;   
+    display: flex;  
+    flex-direction: row;
+    justify-content: start;       
+}
