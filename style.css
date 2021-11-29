@@ -2,22 +2,32 @@
     body{
         width: 1300px;
         margin: auto;
-        margin-top: 0px;
+        }
 }
-}
-@media (max-width: 1000px){
+/*@media (max-width: 1000px){
     #back{
         height: 200px;
+        margin: auto;
+        margin-top: 0px;
     }
+} */
+
+html{
+    z-index: 0;
 }
-    
+body{
+    margin-top: 0px;
+    z-index: 2;
+}
+
 #back{
     background: url(./img/robert-mitchum.jpg), linear-gradient(0.25turn, #37916e, black 50%);
     background-size: contain;
     background-position:right;
     background-repeat: no-repeat;
-    height: 750px; 
+    background-attachment: fixed; 
     color: white;
+    z-index: 1;
     
 }
     
@@ -36,10 +46,15 @@ header{
     align-items: center;
     width: 1300px;
     position: fixed;
+    margin-top: 0px;
 }
 
 h1{
     margin-right: 25px;
+}
+
+nav{
+    margin-top: 0px;
 }
 
 nav>ul{
@@ -107,6 +122,7 @@ section>div{
 #skills{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -129,4 +145,56 @@ section>div{
 }
 progress::-webkit-progress-value {
 	background:#37916e;
+}
+
+footer{
+    color: white;
+    background-color: #37916e;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 40px;
+    align-items: center;
+    
+}
+
+#testimonials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow-x: visible;
+    
+}
+
+.testi{
+    display: flex;
+    border: solid;
+    width: 300px; height: 280px;
+    position: relative;
+    margin-bottom: 6px;
+}
+.testi_face{
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 2px;
+    z-index: 9;
+}
+.testi_face>img{
+    width: 80px; height: 120px;
+}
+
+.testi_name{
+    position: absolute;
+    margin-top: 18px; margin-right: 2px;
+    margin-left: 120px;
+    font-weight: bold;
+}
+.testi_comment{
+    position: absolute;
+    margin-top: 110px;
+    padding: 18px;
+    background-color: grey;
+    font-style: italic;
+    
 }
