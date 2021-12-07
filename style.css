@@ -1,3 +1,8 @@
+:root{--color1:#37916e;
+    --color2:#5c2f05;
+    --color3: rgb(0, 0, 0, 0.5)
+}
+
 @media (min-width: 1300px){
     body{
         width: 1300px;
@@ -21,7 +26,7 @@ body{
 }
 
 #back{
-    background: url(./img/robert-mitchum.jpg), linear-gradient(0.25turn, #37916e, black 50%);
+    background: url(./img/robert-mitchum.jpg), linear-gradient(0.25turn, var(--color1), black 50%);
     background-size: contain;
     background-position:right;
     background-repeat: no-repeat;
@@ -40,7 +45,7 @@ html {
 
 header{
     display: flex;
-    background-color: #37916e ;
+    background-color: var(--color1) ;
     color: white;
     height: 40px;
     align-items: center;
@@ -67,6 +72,7 @@ h4{
 h3{
     margin-bottom: 3px;
     padding-left: 3px;
+    padding-bottom: 3px;
 }
 nav{
     margin-top: 0px;
@@ -147,15 +153,15 @@ section>div{
 
 .progressbar::-webkit-progress-bar {
     border-radius: 12px;
-    background: rgb(92, 47, 5);
+    background: var(--color2);
 }
 progress::-webkit-progress-value {
-	background:#37916e;
+	background: var(--color1);
 }
 
 footer{
     color: white;
-    background-color: #37916e;
+    background-color: var(--color1);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -199,7 +205,7 @@ footer{
     position: absolute;
     margin-top: 110px;
     padding: 18px;
-    background-color: grey;
+    background-color: var(--color3);
     font-style: italic;
     
 }
@@ -209,3 +215,55 @@ footer{
     column-width: 500px;
   }
   
+
+  /*contact */
+
+  .mycontact{
+      display: flex;
+      flex-direction: row;
+      width: 500px;
+      height: 100px;
+      align-items: center;
+      border: solid;
+      margin: 6px;
+      background-color: var(--color3);
+     }
+
+  .mycontact>div>i{
+      font-size: 1.75em;
+      padding: 12px;
+      margin-right: 12px;
+      margin-left: 12px;
+      color: var(--color2);
+  }  
+
+  .mycontact1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 6px;
+    height: inherit;
+    
+  }
+
+  .mycontact h3{
+      margin: 0px;
+
+  }
+
+  #mycontact0{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+  }
+
+  .mylink{
+      display: flex;
+    justify-content: space-around;
+  }
+
+  #formulaire{
+      display: flex;
+      align-items: center;
+  }
