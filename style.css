@@ -3,12 +3,8 @@
     --color3: rgb(0, 0, 0, 0.5)
 }
 
-@media (min-width: 1300px){
-    body{
-        width: 1300px;
-        margin: auto;
-        }
-}
+
+
 /*@media (max-width: 1000px){
     #back{
         height: 200px;
@@ -149,15 +145,33 @@ section>div{
   border:1px solid black;
   border-radius: 12px;
   height:12px;
+  
 }
 
 .progressbar::-webkit-progress-bar {
     border-radius: 12px;
     background: var(--color2);
 }
-progress::-webkit-progress-value {
+.progressbar::-webkit-progress-value {
 	background: var(--color1);
+    /*
+    animation: toto 1000ms ease;*/
+    width: 200px;
 }
+
+
+@keyframes toto{
+        from {
+            width: 0px;
+        }
+        to {
+            width: 100%;
+        }
+    }
+
+
+
+
 
 footer{
     color: white;
@@ -267,3 +281,12 @@ footer{
       display: flex;
       align-items: center;
   }
+
+
+
+  @media (min-width: 1300px){
+    body{
+        width: 1300px;
+        margin: auto;
+        }
+    }
